@@ -192,6 +192,9 @@ ctrl + shift + m
 ctrl + shift + k
     dm-kill
 
+ctrl + shift + u
+    dm-upload
+
 # dunst keys
 ctrl + grave
     dunstctl history-pop
