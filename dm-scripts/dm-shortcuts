@@ -1,0 +1,19 @@
+#!/bin/env bash
+
+source theme
+
+shortcuts=(
+    "Play music from youtube : ctrl + shift + m"
+    "Kill a process : ctrl + shift + k"
+)
+
+text=""
+
+for shortcut in "${shortcuts[@]}"; do
+    text+=$shortcut
+    text+='\n'
+done
+
+text=${text::-2}
+
+echo -e $text | dmenu -l 10 -i -nb "$bg" -nf "$fg" -sb "$altbg" -sf "$fg" -fn "$FONT" -p "Search:"

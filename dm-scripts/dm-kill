@@ -1,0 +1,7 @@
+#!/bin/env bash
+
+source theme
+
+process=$(echo '' | dmenu -i -nb "$bg" -nf "$fg" -sb "$altbg" -sf "$fg" -fn "$FONT" -p "Kill") || exit
+
+killall $process
