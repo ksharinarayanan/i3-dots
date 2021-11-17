@@ -191,3 +191,13 @@ ctrl + shift + m
 
 ctrl + shift + k
     dm-kill
+
+# dunst keys
+ctrl + grave
+    dunstctl history-pop
+
+ctrl + space
+    dunstctl close
+
+ctrl + shift + space
+    dunstctl close-all
