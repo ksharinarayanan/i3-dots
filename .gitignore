@@ -3,6 +3,7 @@
 
 # Files to not ignore
 !/.gitignore
+!/setup.sh
 
 # Folder to not ignore
 !/i3/
