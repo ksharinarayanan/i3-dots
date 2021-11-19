@@ -167,7 +167,7 @@ bindsym $mod+r mode "resize"
 ##
 
 # assign [class="Alacritty"] 1
-assign [class="firefox|Brave-browser"] 2
+assign [class="firefox|Brave-browser|Microsoft-edge"] 2
 # assign [class="Thunar"] 3
 # assign [class="Geany|Code"] 4
 # assign [class="Gimp-2.10|vlc|Inkscape"] 5

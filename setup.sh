@@ -29,7 +29,7 @@ chaotic-aur() {
 
 install-packages() {
     echo -e 'Installing packages..'
-    sudo pacman -S ytfzf fzf noto-fonts-emoji clipit
+    sudo pacman -S ytfzf fzf noto-fonts-emoji clipit variety
 }
 
 mount-windows() {
