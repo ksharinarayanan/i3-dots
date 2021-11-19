@@ -20,4 +20,6 @@ source $HOME/.config/fish/dmenu-theme.fish
 set -x YTFZF_EXTMENU "dmenu -l 10 -i -nb '"$bg"' -nf '"$fg"' -sb '"$altbg"' -sf '"$fg"' -fn '"$FONT"' -p \"Search music:\""
 set CHROME_EXECUTABLE "brave"
 
+alias windows-drives='sudo mount /dev/sda1 /mnt/data/ && sudo mount /dev/sda2 /mnt/programs/'
+
 # alias dmenu='LC_CTYPE=en_GB.UTF-8 dmenu'
