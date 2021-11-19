@@ -18,5 +18,6 @@ end
 source $HOME/.config/fish/dmenu-theme.fish
 
 set -x YTFZF_EXTMENU "dmenu -l 10 -i -nb '"$bg"' -nf '"$fg"' -sb '"$altbg"' -sf '"$fg"' -fn '"$FONT"' -p \"Search music:\""
+set CHROME_EXECUTABLE "brave"
 
 # alias dmenu='LC_CTYPE=en_GB.UTF-8 dmenu'

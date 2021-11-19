@@ -29,10 +29,17 @@ chaotic-aur() {
 
 install-packages() {
     echo -e 'Installing packages..'
-    sudo pacman -S ytfzf fzf noto-fonts-emoji
+    sudo pacman -S ytfzf fzf noto-fonts-emoji clipit
+}
+
+mount-windows() {
+    sudo mkdir /mnt/data /mnt/programs
+    sudo mount /dev/sda2 /mnt/programs
+    sudo mount /dev/sda1 /mnt/data/
 }
 
 yay-install
 chaotic-aur
 install-packages
 dots
+mount-windows
