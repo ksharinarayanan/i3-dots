@@ -10,7 +10,7 @@ $HOME/.config/i3/bin/launchbar.sh
 xsetroot -cursor_name left_ptr
 
 # kill if already running
-killall -9 picom xfce4-power-manager ksuperkey dunst sxhkd clipit
+killall -9 picom xfce4-power-manager ksuperkey dunst sxhkd clipit variety
 
 # Launch Conky
 # conky -c $HOME/.config/conky/axyl.conkyrc
@@ -41,6 +41,9 @@ udiskie &
 
 # start clipboard manager
 clipit &
+
+# start wallpaper manager
+variety &
 
 # replace neovim colorscheme
 sed -i "s/theme =.*$/theme = \"norchad\",/g" $HOME/.config/nvim/lua/chadrc.lua
