@@ -1,6 +1,6 @@
 source theme
 
-file=$(find $HOME -type f | dmenu -l 10 -i -nb "$bg" -nf "$fg" -sb "$altbg" -sf "$fg" -fn "$FONT" -p "Select a file:")
+file=$(find $HOME -type f -not -path '*/\.*' | dmenu -l 10 -i -nb "$bg" -nf "$fg" -sb "$altbg" -sf "$fg" -fn "$FONT" -p "Select a file:") || exit
 
 curl -F "file=@$file" 0x0.st | xclip -selection c
 
